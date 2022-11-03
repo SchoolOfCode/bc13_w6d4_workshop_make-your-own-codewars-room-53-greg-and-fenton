@@ -1,7 +1,5 @@
-/* 
-👉 Write your kata here!
-*/
-/* You have 
+/* Holiday vs Armageddon
+INSTRUCTIONS
 A meteor is heading for earth. NASA has a team of meteor-fighting, expert oil-drilling astronauts in their department to fight this meteor. The problem is, some have booked holiday. We need to figure out what day of the week this holiday is booked upon. 
 The days of the week are represented as numbers like this:
 Monday = 1,
@@ -21,24 +19,17 @@ So findTheFutureDayOfTheWeek(3, 10460) should return 5 (i.e. Friday)
 Clare knows that on Sat (6) her holiday is 132 days in the future.
 So findTheFutureDayOfTheWeek(6, 131) should return 4 (i.e Thursday)
 
+NOTE: You shall only ever be given positive whole integers (no decimal points, no negative numbers or anything numbers) for the futureAmountOfDays so you do not need to worry about any validation.
+
 */
-function findTheFutureDayOfTheWeek(currentDay, futureAmountOfDays) {
-    let remainder = futureAmountOfDays % 7; 
-    let futureDay = currentDay + remainder;
-    if (futureDay > 7) {
-        futureDay = futureDay - 7;
-    }
-    return futureDay;
+
+
+//👉 Write the function your CodeWarriors will start with below here:
+function findTheFutureDayOfTheWeek(currentDay, futureAmountOfDays) { 
+    return theFutureDayOfTheWeek;
 }
 
-console.log(findTheFutureDayOfTheWeek(1, 8)); // should return 2 (Tuesday) ( 8 % 7 = 1)
-console.log(findTheFutureDayOfTheWeek(4, 25)); // should return 1 (Monday) (25 % 7 = 4)
-console.log(findTheFutureDayOfTheWeek(5, 10458)); // current day was a Friday, the future day was a Friday
-console.log(findTheFutureDayOfTheWeek(5, 10459));
-
-console.log("John ", findTheFutureDayOfTheWeek(3, 10458));
-console.log("Clare ", findTheFutureDayOfTheWeek(6, 132));
 
 export default findTheFutureDayOfTheWeek;
 
-//👉 Write the function your CodeWarriors will start with below here:
+
